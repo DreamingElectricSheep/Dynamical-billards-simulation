@@ -79,7 +79,7 @@ myapplication.AssetUpdateAll();
 
 
 myapplication.SetTimestep(0.005)  # 'Refreshes' 200 times every second
-myapplication.SetTryRealtime(True)
+myapplication.SetTryRealtime(False)
 
 array_time = []
 array_x = []

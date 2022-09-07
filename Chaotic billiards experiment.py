@@ -300,7 +300,7 @@ myapplication.AssetUpdateAll();
 
 
 myapplication.SetTimestep(0.005)  # 'Refreshes' 200 times every second
-myapplication.SetTryRealtime(False)
+myapplication.SetTryRealtime(True)
 
 array_time = []
 array_x = []
@@ -337,3 +337,8 @@ plt.ylabel='y posistion [m]'
 plt.grid()
 
 plt.show()
+
+# To have the actual corrosponding variables since it was inverted before even though it plots right for some reason
+temp = array_x
+array_x = array_y
+array_y = temp
